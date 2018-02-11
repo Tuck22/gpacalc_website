@@ -1,5 +1,7 @@
 # Milo's NBPS GPA Calculator
 
+---
+
 ## Download and Use
 
 Click [here](https://github.com/Myl0g/gpacalc_cpp/releases/latest) to download the latest version.
