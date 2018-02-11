@@ -4,7 +4,9 @@
 
 ## Download and Use
 
-Click [here](https://github.com/Myl0g/gpacalc_cpp/releases/latest) to download the latest version.
+If you're using the *original* gpacalc, just check for updates when the app finishes calculating your GPA.
+
+Otherwise, click [here](https://github.com/Myl0g/gpacalc_cpp/releases/latest) to download the latest version.
 
 ### Mac
 
