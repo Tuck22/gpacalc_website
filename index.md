@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+# Milo's NBPS GPA Calculator
 
-You can use the [editor on GitHub](https://github.com/Myl0g/gpacalc_website/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Download and Use
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Click [here](https://github.com/Myl0g/gpacalc_cpp/releases/latest) to download the latest version.
 
-### Markdown
+### Mac
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Move the downloaded file to an uncluttered place so you don't lose it (e.g. your Desktop, Documents, Home folder, etc).
 
-```markdown
-Syntax highlighted code block
+If the file is titled "gpacalc-mac-...", then double-click it to un-zip the actual app.
 
-# Header 1
-## Header 2
-### Header 3
+Double-click the file "gpacalc". You should see a warning saying the app can't be opened since it's from an unidentified developer.
+Hit "OK", then right-click "gpacalc" and select "Open". The same prompt should appear, but with an option to open it. Click that option.
 
-- Bulleted
-- List
+### Windows
 
-1. Numbered
-2. List
+Un-zip the downloaded file, and try running the file from Windows Explorer.
 
-**Bold** and _Italic_ and `Code` text
+### Linux
 
-[Link](url) and ![Image](src)
+Run the following in the terminal, substituting the "<>":
+
+```
+tar xvf <path to downloaded file>
+chmod +x ./gpacalc
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+You can now run the calculator normally.
 
-### Jekyll Themes
+#### Arch Linux
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Myl0g/gpacalc_website/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Here's a PKGBUILD for you to use (please **insert the correct version number**):
 
-### Support or Contact
+```
+pkgname=gpacalc-bin
+pkgver=
+pkgrel=1
+epoch=
+pkgdesc="NBPS GPA Calculator (C++ Edition)"
+arch=(x86_64)
+url="http://github.com/Myl0g/gpacalc_cpp"
+license=('GPL')
+depends=('gcc-libs')
+source=("https://github.com/Myl0g/gpacalc_cpp/releases/download/v${pkgver}/gpacalc-linux-${pkgver}.tar.xz")
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+package() {
+	install -d "${pkgdir}/usr/bin"
+	install "${srcdir}/gpacalc" "${pkgdir}/usr/bin"
+}
+```
+
+Remember to run `makepkg -g >> PKGBUILD`.
