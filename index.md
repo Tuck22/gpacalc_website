@@ -34,11 +34,11 @@ You can now run the calculator normally.
 
 #### Arch Linux
 
-Here's a PKGBUILD for you to use (please **insert the correct version number**):
+Here's a PKGBUILD for you to use (uses version 3.0).
 
 ```
 pkgname=gpacalc-bin
-pkgver=
+pkgver=3.0
 pkgrel=1
 epoch=
 pkgdesc="NBPS GPA Calculator (C++ Edition)"
