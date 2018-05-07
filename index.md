@@ -1,4 +1,4 @@
-# Milo's NBPS GPA Calculator
+# NBPS GPA Calculator
 
 ---
 
